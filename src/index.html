@@ -222,6 +222,7 @@
             </p>
           </div>
 
+          <div class="vacancies__red-line"></div>
         </section>
 
         <section class="vacancies__contact contact">
@@ -249,13 +250,32 @@
       <section class="main__enter">
         <section class="main__e-form e-form">
           <h1 class="e-form__title">Welcome App Vesto!</h1>
-          <form action="" class="e-form__item">
-            <p>First Name*</p>
-            <input type="text" name="userName" id="userName">
 
-            <p>E-Mail Address*</p>
-            <input type="text" name="userMail" id="userMail">
+          <form class="e-form__item">
+            <p class="e-form__text">First Name*</p>
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              class="e-form__input"
+              placeholder="Add your Name here"
+            >
+
+            <p class="e-form__text">E-Mail Address*</p>
+            <input
+              type="text"
+              name="userMail"
+              id="userMail"
+              class="e-form__input"
+              placeholder="john.doe@internet.com"
+            >
+
+            <div class="e-form__end">
+              <input type="file" name="userSummary" id="userSummary" class="e-form__file">
+              <button class="e-form__button">Send</button>
+            </div>
           </form>
+
         </section>
       </section>
 

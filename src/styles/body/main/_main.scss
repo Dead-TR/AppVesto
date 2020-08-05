@@ -1,5 +1,6 @@
 @import "./join/join";
 @import "./vacancies/vacancies";
+@import "./e-form/e-form";
 
 .main {
   width: 100%;
@@ -30,4 +31,13 @@
       -webkit-text-fill-color: transparent;
     }
   }
+
+  &__enter {
+    margin: 65px 10px;
+  }
+
+  &__e-form {
+    max-width: 550px;
+  }
+
 }

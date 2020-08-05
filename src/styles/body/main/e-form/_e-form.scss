@@ -1,0 +1,45 @@
+.e-form {
+  width: 100%;
+  margin: 21px 0;
+
+  &__title {
+    @include fonts-style ("Bunken Tech Sans Pro", 600, 45px, normal, 57px, #1B1B25);
+    text-transform: uppercase;
+  }
+
+  &__item {
+
+  }
+
+  &__text {
+    @include fonts-style ("Lato", normal, 12px, normal, 21px, #A4A4AE);
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    @include fonts-style ("Lato", normal, 16px, normal, 28px, #A4A4AE);
+    margin-bottom: 30px;
+
+    &::placeholder {
+      @include fonts-style ("Lato", normal, 16px, normal, 28px, #A4A4AE);
+    }
+  }
+
+  &__file {
+
+  }
+
+  &__button {
+    @include fonts-style ("Signika", bold, 14px, normal, 130%, white);
+    padding: 15px 45px;
+    border: 4px solid white;
+    background: linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
+    border-radius: 100px;
+    box-shadow: 0 0 0 2px #FF1500;
+    cursor: pointer;
+  }
+}
