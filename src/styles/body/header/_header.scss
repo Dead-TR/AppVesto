@@ -1,0 +1,19 @@
+@import "./navigation/navigation";
+
+.header {
+  background: #121212;
+  width: 100%;
+  height: 70px;
+
+  &__content {
+    height: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+
+  }
+}

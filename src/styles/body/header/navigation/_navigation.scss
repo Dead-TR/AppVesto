@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -200px;
+  }
+
+  &__list-item {
+    margin-right: 50px;
+  }
+
+  &__element {
+    @include fonts-style ("Signika", normal, 14px, normal, 100%, white);
+  }
+}
