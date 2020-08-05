@@ -1,4 +1,5 @@
 @import "./navigation/navigation";
+@import "./lang/lang";
 
 .header {
   background: #121212;
@@ -16,4 +17,9 @@
   &__navigation {
 
   }
+
+  &__lang {
+
+  }
+
 }

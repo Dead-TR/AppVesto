@@ -1,0 +1,18 @@
+.lang {
+  display: flex;
+  height: 100%;
+  align-items: center;
+
+  &__list {
+    background: transparent;
+    border: none;
+    appearance: 1;
+    outline: 0;
+    @include fonts-style ("Signika", normal, 12px, normal, 15px, white);
+  }
+
+  &__element {
+    @include fonts-style ("Signika", normal, 12px, normal, 15px, white);
+    background: black;
+  }
+}

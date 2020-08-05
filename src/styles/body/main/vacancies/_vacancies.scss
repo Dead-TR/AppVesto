@@ -1,0 +1,42 @@
+@import "./dropdown/dropdown";
+@import "./skill-level/skill-level";
+@import "./description/description";
+@import "./contact/contact";
+
+.vacancies {
+  padding: 0 80px;
+  position: relative;
+  
+  &__title {
+    @include fonts-style ("Bunken Tech Sans Pro", 600, 45px, normal, 57px, black);
+    text-transform: uppercase;
+  }
+
+  &__choice {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__dropdown {
+
+  }
+
+  &__skill-level {
+
+  }
+
+  &__description {
+
+  }
+
+  &__long-line {
+    position: absolute;
+    left: -100%;
+    border-top: 3px solid #E9E9ED;
+    width: 200vw;
+  }
+
+  &__contact {
+
+  }
+}

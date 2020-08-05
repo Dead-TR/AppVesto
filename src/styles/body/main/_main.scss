@@ -1,0 +1,33 @@
+@import "./join/join";
+@import "./vacancies/vacancies";
+
+.main {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  &__join {
+    
+  }
+
+  &__vacancies {
+
+  }
+
+  &__wiew-all {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & button {
+      @include fonts-style ("Signika", bold, 14px, normal, 130%, white);
+      border: solid 1px #FF1500;
+      border-radius: 100px;
+      padding: 13px 25px;
+  
+      background: -webkit-linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.skill-level {
+  display: flex;
+
+  &_unchecked,
+  &_checked {
+
+    &::before {
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-size: contain;
+      position: absolute;
+      left: -32px;
+      cursor: pointer;
+    }
+  }
+
+  &_checked {
+    &::before {
+      background: url(../../../../../images/body/main/vacancies/skill-level/checked.svg) no-repeat center;
+    }
+  }
+
+  &_unchecked {
+    &::before {
+      background: url(../../../../../images/body/main/vacancies/skill-level/unchecked.svg) no-repeat center;
+    }
+  }
+
+  &__item {
+    margin-left: 75px;
+    position: relative;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__text {
+    @include fonts-style ("Lato", normal, 14px, normal, 25px, #1B1B25);
+  }
+}

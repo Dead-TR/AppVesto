@@ -1,0 +1,75 @@
+.join {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 100px 80px;
+
+  &__content {
+    max-width: 640px;
+    color: black;
+  }
+
+  &__img {
+    width: 620px;
+    height: auto;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    @include fonts-style ("Bunken Tech Sans Pro", 600, 70px, normal, 110%, black);
+  }
+
+  &__text {
+    margin: 25px 0;
+    max-width: 520px;
+    @include fonts-style ("Roboto", normal, 20px, normal, 26px, black);
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 415px;
+    height: 65px;
+    
+    border-radius: 100px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    align-items: center;
+
+    & input {
+      height: 75%;
+      margin: 0 25px;
+      width: 90%;
+      outline: none;
+      border: none;
+      @include fonts-style ("Inter", normal, 16px, normal, 100%, black);
+
+      & ::placeholder {
+        @include fonts-style ("Inter", normal, 16px, normal, 100%, #000000cc);
+      }
+    }
+
+    & button {
+      background: linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
+      border-radius: 100px;
+      outline: none;
+      border: none;
+      min-width: 125px;
+      height: 50px;
+      margin: 0 7px;
+      @include fonts-style ("Roboto", bold, 18px, normal, 0, white);
+      cursor: pointer;
+      transition: transform 1s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+}
+
+// @include fonts-style ("Signika", normal, 14px, normal, 100%, black);

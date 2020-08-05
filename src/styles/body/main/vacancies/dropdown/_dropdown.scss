@@ -1,0 +1,13 @@
+.dropdown {
+  border: none;
+  @include fonts-style ("Lato", normal, 16px, normal, 28px, #121212);
+  appearance: none;
+  background: url(../../../../../images/body/main/vacancies/dropdown/Cyan.svg) no-repeat right #F8F8FC;
+  width: 250px;
+  height: 50px;
+  outline: none;
+
+  &__option {
+    padding: 50px;
+  }
+}
