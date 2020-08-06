@@ -1,0 +1,22 @@
+.total {
+
+  &__logo {
+    margin: 0 auto;
+  }
+
+  &__policy {
+    margin: 35px auto 10px;
+    text-align: center;
+    @include fonts-style ("Signika", bold, 12px, normal, 140%, white);
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  &__item {
+
+  }
+}

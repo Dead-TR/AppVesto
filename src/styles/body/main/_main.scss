@@ -1,6 +1,7 @@
 @import "./join/join";
 @import "./vacancies/vacancies";
 @import "./e-form/e-form";
+@import "./communication/communication";
 
 .main {
   width: 100%;
@@ -33,11 +34,17 @@
   }
 
   &__enter {
-    margin: 65px 10px;
+    margin: 65px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   &__e-form {
     max-width: 550px;
   }
 
+  &__communication {
+
+  }
 }

@@ -1,0 +1,27 @@
+@import "./links/links";
+@import "./total/total";
+
+.footer {
+  width: 100%;
+  background: #121212;
+
+  &__content {
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 75px;
+  }
+
+  &__links {
+
+  }
+
+  &__total {
+
+  }
+
+
+}
+
+

@@ -1,0 +1,66 @@
+$mainLetterColor: #121212;
+
+.communication {
+  background: white;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transition: transform 1s, box-shadow 1s;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+
+
+  &__title {
+    @include fonts-style ("Roboto", normal, 18px, normal, 21px, $mainLetterColor);
+  }
+
+  &__name {
+    @include fonts-style ("Roboto", bold, 26px, normal, 140%, $mainLetterColor);
+    margin: 15px 0 0;
+
+    & img {
+      margin-right: 10px;
+      width: 20px;
+      height: auto;
+    }
+  }
+
+  &__items {
+    margin: 0 30px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    @include fonts-style ("Roboto", 300, 14px, normal, 26px, #151515);
+
+    & img {
+      margin-right: 10px;
+      width: 15px;
+      height: auto;
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__content-title {
+    @include fonts-style ("Roboto", normal, 18px, normal, 130%, $mainLetterColor);
+  }
+
+  &__content-list {
+
+  }
+
+  &__content-item {
+    @include fonts-style ("Roboto", 300, 14px, normal, 22px, $mainLetterColor);
+
+    &:before {
+      content: "- ";
+    }
+  }
+}

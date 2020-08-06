@@ -29,8 +29,31 @@
     }
   }
 
-  &__file {
+  &__end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  &__file-item {
+    display: none;
+  }
+
+  &__file-label {
+    @include fonts-style ("Roboto", 500, 22px, normal, 26px, transparent);
+    background: -webkit-linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+
+    & img {
+      margin-right: 10px;
+      display: inline;
+    }
+
+    & p {
+      display: inline;
+    }
   }
 
   &__button {

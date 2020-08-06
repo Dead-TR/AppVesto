@@ -1,0 +1,30 @@
+.links {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    @include fonts-style ("Signika", normal, 18px, normal, 140%, white);
+    margin-bottom: 24px;
+  }
+
+  & :last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    @include fonts-style ("Signika", normal, 24px, normal, 130%, white);
+  }
+
+  &__contact {
+    margin: 10px 0;
+  }
+
+  &__contact-name {
+    @include fonts-style ("Signika", normal, 12px, normal, 130%, white);
+    opacity: 0.5;
+  }
+
+  &__contact-link {
+    @include fonts-style ("Signika", bold, 14px, normal, 130%, white);
+  }
+}
