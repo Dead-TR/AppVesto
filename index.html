@@ -86,12 +86,82 @@
 
       <section class="main__vacancies vacancies">
         <h1 class="vacancies__title">Сurrent vacancies</h1>
+
         <section class="vacancies__choice">
 
-          <select name="" id="" class="vacancies__dropdown dropdown">
-            <option value="" class="dropdown__option">All Vacancies</option>
-            <option value="" class="dropdown__option">Option</option>
-          </select>
+          <div
+            name=""
+            id=""
+            class="vacancies__dropdown dropdown"
+          >
+            <div class="dropdown__arrow"></div>
+            <p class="dropdown__select"
+              data-dropdownValue="1"
+              data-open="false"
+            >
+            empty
+            </p>
+            <ul class="dropdown__list dropdown__list_closed">
+
+              <li
+                data-dropdownValue="1"
+                class="dropdown__item"
+              >
+                All Vacancies
+              </li>
+
+              <li
+                data-dropdownValue="2"
+                class="dropdown__item"
+              >
+                Option 1
+              </li>
+
+              <li
+                class="dropdown__item"
+                data-dropdownValue="3"
+              >
+                Option 1
+              </li>
+
+              <li
+                class="dropdown__item"
+                data-dropdownValue="4"
+              >
+                Option 2
+              </li>
+
+              <li
+                class="dropdown__item"
+                data-dropdownValue="5"
+              >
+                Option 3
+              </li>
+
+              <li
+                class="dropdown__item"
+                data-dropdownValue="6"
+              >
+                Option 4
+              </li>
+
+              <li
+                class="dropdown__item"
+                data-dropdownValue="7"
+              >
+                Option 5
+              </li>
+
+              <li
+                class="dropdown__item"
+                data-dropdownValue="8"
+              >
+                Option 6
+              </li>
+              
+            </ul>
+
+          </div>
 
           <div class="vacancies__skill-level skill-level">
 
@@ -144,9 +214,11 @@
         </section>
 
         <div class="vacancies__long-line"></div>
+
         <section class="vacancies__description description">
 
           <div class="description__item description__item_closed">
+            <div class="description__arrow"></div>
             <h1 class="description__title">Junior PHP Developer</h1>
             <h2 class="description__info">Vacancy description</h2>
             <p class="description__text">
@@ -166,6 +238,7 @@
           </div>
 
           <div class="description__item description__item_closed">
+            <div class="description__arrow"></div>
             <h1 class="description__title description__title_highlight">Middle UI/UX Designer</h1>
             <h2 class="description__info">Vacancy description</h2>
             <p class="description__text">
@@ -185,6 +258,7 @@
           </div>
 
           <div class="description__item description__item_closed">
+            <div class="description__arrow"></div>
             <h1 class="description__title ">Senior PHP Developer</h1>
             <h2 class="description__info">Vacancy description</h2>
             <p class="description__text">
@@ -204,6 +278,7 @@
           </div>
 
           <div class="description__item description__item_closed">
+            <div class="description__arrow"></div>
             <h1 class="description__title description__title_highlight">Vacancy description</h1>
             <h2 class="description__info">Vacancy description</h2>
             <p class="description__text">
@@ -271,10 +346,47 @@
             >
 
             <div class="e-form__end">
-              <input type="file" name="userSummary" id="userSummary" class="e-form__file">
+              <input type="file" name="userSummary" id="userSummary" class="e-form__file-item">
+              <label for="userSummary" class="e-form__file-label">
+                <img src="./images/body/main/e-form/upload.svg" alt="upload">
+                <p>Upload summary</p>
+              </label>
               <button class="e-form__button">Send</button>
             </div>
           </form>
+
+        </section>
+
+        <section class="main__communication communication">
+
+          <h1 class="communication__title">HR Manager</h1>
+          <p class="communication__name">
+            <img src="./images/body/main/communication/person.svg" alt="">
+            Anastasia Naumenko
+          </p>
+          <div class="communication__items">
+
+            <a href="tel:+380979799797" class="communication__item">
+              <img src="./images/body/main/communication/phone.svg" alt="logo">
+              +38(097) 979 9797
+            </a>
+
+            <a href="mailto:anastasia@appvesto.com" class="communication__item">
+              <img src="./images/body/main/communication/mail.svg" alt="logo">
+              anastasia@appvesto.com
+            </a>
+
+          </div>
+          <div class="communication__content">
+            <h1 class="communication__content-title">Wait your resume if you:</h1>
+            <ul class="communication__content-list">
+              <li class="communication__content-item">Experience in sales of IT products from 1 year </li>
+              <li class="communication__content-item">Experience in negotiating and closing transactions</li>
+              <li class="communication__content-item">Ability to work on the result and show it in numbers</li>
+              <li class="communication__content-item">Good memory and quick learning</li>
+              <li class="communication__content-item">Energy in your voice and fire in your eyes!</li>
+            </ul>
+          </div>
 
         </section>
       </section>
@@ -282,6 +394,56 @@
     </main>
 
     <footer class="footer">
+      <div class="footer__content">
+        <section class="footer__links links">
+          <a href="" class="links__item">Our work</a>
+          <a href="" class="links__item">About us</a>
+          <a href="" class="links__item">Contacts</a>
+          <a href="" class="links__item">Our technology</a>
+        </section>
+  
+        <section class="footer__total total">
+          <div class="logo total__logo">
+              <img src="./images/general/logo/img-1.svg" alt="logo">
+              <img src="./images/general/logo/txt-1.svg" alt="logo">
+              <img src="./images/general/logo/txt-2.svg" alt="logo">
+          </div>
+
+          <p class="total__policy">© 2019 AppVesto</p>
+
+          <div class="total__contacts">
+            <a href="https://dribbble.com/" class="total__item">
+              <img src="./images/body/footer/total/1.svg" alt="dribbble">
+            </a>
+
+            <a href="https://www.facebook.com/" class="total__item">
+              <img src="./images/body/footer/total/2.svg" alt="facebook">
+            </a>
+
+            <a href="https://www.behance.net/" class="total__item">
+              <img src="./images/body/footer/total/3.svg" alt="behance">
+            </a>
+
+            <a href="https://www.instagram.com/" class="total__item">
+              <img src="./images/body/footer/total/4.svg" alt="instagram">
+            </a>
+          </div>
+        </section>
+  
+        <section class="footer__links links">
+          <h1 class="links__title">Contacts</h1>
+  
+          <div class="links__contact">
+            <p class="links__contact-name">Email</p>
+            <a href="mailto:appvesto@gmail.com" class="links__contact-link">appvesto@gmail.com</a>
+          </div>
+  
+          <div class="links__contact">
+            <p class="links__contact-name">Phone</p>
+            <a href="tel:+380980659285" class="links__contact-link">+380 98 065 9285</a>
+          </div>
+        </section>
+      </div>
     </footer>
 
   </body>
