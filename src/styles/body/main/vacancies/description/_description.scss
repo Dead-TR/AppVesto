@@ -1,42 +1,35 @@
 .description {
   margin: 50px 0;
+  position: relative;
+
+  &__arrow {
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    width: 25px;
+    height: 10px;
+    background: url(../../../../../images/body/main/vacancies/dropdown/Cyan.svg) no-repeat left #F8F8FC;
+    background-size: cover;
+    transition: transform 1s;
+    z-index: -1;
+  }
   
   &__item {
     border: 1px solid #E9E9ED;
     border-left: none;
-    border-right: none; 
+    border-right: none;
     position: relative;
     overflow-y: hidden;
     cursor: pointer;
     max-height: 60px;
-
-    &_closed,
-    &_open {
-      &::before {
-        content: "";
-        position: absolute;
-        left: 15px;
-        top: 20px;
-        width: 25px;
-        height: 10px;
-        background-size: cover;
-      }
-    }
+    transition: max-height 1s;
 
     &_open {
-      max-height: 1000px;
-      transition: max-height 1s;
-      &::before {
-        background: url(../../../../../images/body/main/vacancies/description/open.svg) no-repeat right;
-      }
+      max-height: 500px;
     }
     
     &_closed {
       max-height: 60px;
-      transition: max-height 0.5s;
-      &::before {
-        background: url(../../../../../images/body/main/vacancies/description/closed.svg) no-repeat right;
-      }
     }
   }
 

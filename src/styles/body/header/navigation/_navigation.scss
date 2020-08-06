@@ -15,5 +15,10 @@
 
   &__element {
     @include fonts-style ("Signika", normal, 18px, normal, 135%, white);
+    transition: color 1s;
+
+    &:hover {
+      color: #b3b3b3;
+    }
   }
 }

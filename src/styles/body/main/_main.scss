@@ -26,10 +26,18 @@
       border: solid 1px #FF1500;
       border-radius: 100px;
       padding: 13px 25px;
+      cursor: pointer;
+      outline: none;
   
       background: -webkit-linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      transition: transform 1s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 

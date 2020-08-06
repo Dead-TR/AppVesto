@@ -17,6 +17,10 @@
   }
 
   &__item {
+    transition: transform 1s;
 
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 }

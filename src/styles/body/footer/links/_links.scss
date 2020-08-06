@@ -5,6 +5,11 @@
   &__item {
     @include fonts-style ("Signika", normal, 18px, normal, 140%, white);
     margin-bottom: 24px;
+    transition: color 1s;
+
+    &:hover {
+      color: #b3b3b3;
+    }
   }
 
   & :last-child {
@@ -26,5 +31,10 @@
 
   &__contact-link {
     @include fonts-style ("Signika", bold, 14px, normal, 130%, white);
+    transition: color 1s;
+
+    &:hover {
+      color: #b3b3b3;
+    }
   }
 }
