@@ -72,4 +72,48 @@
 
 }
 
-// @include fonts-style ("Signika", normal, 14px, normal, 100%, black);
+@media only screen and (max-width: 1300px) {
+  .join {
+    justify-content: center;
+
+    &__content {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    &__img {
+      margin-top: 35px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .join {
+    padding: 50px 20px;
+
+    &__title {
+      @include fonts-compact(600, 42px, 110%);
+      text-align: center;
+    }
+
+    &__text {
+      margin: 20px 0;
+      max-width: 520px;
+      @include fonts-style ("Roboto", normal, 14px, normal, 130%, black);
+    }
+
+    &__form {
+      & input {
+        font-size: 14px;
+
+        & ::placeholder {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

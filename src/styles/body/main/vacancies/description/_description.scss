@@ -60,3 +60,17 @@
     @include fonts-style ("Lato", normal, 16px, normal, 28px, #1B1B25);
   }
 }
+
+@media only screen and (max-width: 685px) {
+  .description {
+
+    &__title {
+      margin: 15px 0 15px 50px;
+    }
+
+    &__info,
+    &__text {
+      margin: 15px 0;
+    }
+  }
+}

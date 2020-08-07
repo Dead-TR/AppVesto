@@ -1,0 +1,115 @@
+.mobile-filter {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 3;
+
+  &__img {
+    background: url(../../../../../images/body/main/vacancies/mobile-filter/filter.svg) no-repeat right;
+    position: absolute;
+    right: 10px;
+    top: -30px;
+    width: 15px;
+    height: 20px;
+    z-index: 4;
+  }
+
+  &__amount {
+    position: absolute;
+    top: -33px;
+    right: 45px;
+
+    height: 25px;
+    width: 40px;
+    background: linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    @include fonts-style ("Lato", 900, 12px, normal, 15px, white);
+    max-width: 0;
+    padding-left: 0;
+    transition: max-width 1s, padding 1s;
+
+    &_show {
+      max-width: 100px;
+      padding-left: 8px;
+
+      &::after {
+        content: "x";
+        position: absolute;
+        right: 8px;
+      }
+    }
+  }
+
+  &__list {
+    width: 190px;
+    background: white;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 31px 33px -1px rgba(0, 0, 0, 0.41);
+    overflow-y: hidden;
+    max-height: 0;
+    transition: max-height 1s, padding 1s;
+
+    &_open {
+      max-height: 500px;
+      padding: 15px 0;
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+
+    & p {
+      @include fonts-style ("Lato", normal, 16px, normal, 28px, #1B1B25);
+    }
+
+    &:hover {
+      background: #F3F3F7;
+    }
+
+    &:hover p {
+      @include fonts-style ("Lato", 900, 16px, normal, 19px, transparent);
+      background: -webkit-linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &:hover label {
+      background: url(../../../../../images/body/main/vacancies/mobile-filter/checkbox-hover.svg) no-repeat center;
+    }
+  }
+
+  &__box {
+    display: none;
+  }
+
+  &__replace {
+    width: 25px;
+    height: 25px;
+    background: url(../../../../../images/body/main/vacancies/mobile-filter/checkbox.svg) no-repeat center;
+    background-size: cover;
+    border-radius: 7.2px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include fonts-style ("Roboto", 900, 16px, normal, 19px, white);
+
+    &_check {
+      background: linear-gradient(90deg, #FF1500 0%, #FE7000 100%) !important;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 891px) {
+  .mobile-filter {
+    display: none;
+  }
+}

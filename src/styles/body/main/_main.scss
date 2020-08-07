@@ -56,3 +56,11 @@
 
   }
 }
+
+@media only screen and (max-width: 685px) {
+  .main {
+    &__wiew-all {
+      display: none;
+    }
+  }
+}

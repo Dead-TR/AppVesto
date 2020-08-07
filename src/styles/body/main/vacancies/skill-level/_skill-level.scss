@@ -40,3 +40,9 @@
     @include fonts-style ("Lato", normal, 14px, normal, 25px, #1B1B25);
   }
 }
+
+@media only screen and (max-width: 890px) {
+  .skill-level {
+    display: none;
+  }
+}

@@ -16,9 +16,55 @@
   <body>
     
     <header class="header">
+      <section class="header__mobile-logo">
+        <img src="./images/general/logo/img-2.svg" alt="logo">
+        <img src="./images/general/logo/txt-1.svg" alt="logo">
+        <img src="./images/general/logo/txt-2.svg" alt="logo">
+      </section>
+      <div class="header__button-side-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="header__mobile-content mobile-content mobile-content_hide">
+
+        <nav class="mobile-content__nav">
+          <ul class="mobile-content__nav-list">
+            <li class="mobile-content__nav-item">
+              <a href="" class="mobile-content__nav-element">Our work</a>
+            </li>
+
+            <li class="mobile-content__nav-item">
+              <a href="" class="mobile-content__nav-element">About us</a>
+            </li>
+
+            <li class="mobile-content__nav-item">
+              <a href="" class="mobile-content__nav-element">Our technology</a>
+            </li>
+
+            <li class="mobile-content__nav-item">
+              <a href="" class="mobile-content__nav-element">Contacts</a>
+            </li>
+
+            <li class="mobile-content__nav-item">
+              <a href="" class="mobile-content__nav-element">Career</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="mobile-content__lang lang">
+          <select size="1" name="pageLang" id="pageLang" class="lang__list">
+            <option value="0" class="lang__element">English</option>
+            <option value="1" class="lang__element">Polish</option>
+            <option value="2" class="lang__element">Ukrainian</option>
+          </select>
+        </section>
+
+      </div>
 
       <div class="header__content">
-        <section class="logo header__logo">
+        <section class="header__logo">
           <img src="./images/general/logo/img-1.svg" alt="logo">
           <img src="./images/general/logo/txt-1.svg" alt="logo">
           <img src="./images/general/logo/txt-2.svg" alt="logo">
@@ -99,7 +145,6 @@
               data-dropdownValue="1"
               data-open="false"
             >
-            empty
             </p>
             <ul class="dropdown__list dropdown__list_closed">
 
@@ -211,6 +256,81 @@
 
           </div>
 
+          <div class="vacancies__mobile-filter mobile-filter">
+
+            <div class="mobile-filter__amount"></div>
+            <div class="mobile-filter__img"></div>
+            
+            <ul class="mobile-filter__list">
+              <li
+                class="mobile-filter__item"
+              >
+              <input type="checkbox" name="filter" id="filter_2" class="mobile-filter__box">
+              <label for="filter_2" class="mobile-filter__replace"></label>
+              <p>Option</p>
+              </li>
+
+              <li
+                class="mobile-filter__item"
+              >
+                <input type="checkbox" name="filter" id="filter_3" class="mobile-filter__box">
+                <label for="filter_3" class="mobile-filter__replace"></label>
+                <p>Option 1</p>
+              </li>
+
+              <li
+                class="mobile-filter__item"
+              >
+                <input type="checkbox" name="filter" id="filter_4" class="mobile-filter__box">
+                <label for="filter_4" class="mobile-filter__replace"></label>
+                <p>Option 2</p>
+              </li>
+
+              <li
+                class="mobile-filter__item"
+              >
+                <input type="checkbox" name="filter" id="filter_5" class="mobile-filter__box">
+                <label for="filter_5" class="mobile-filter__replace"></label>
+                <p>Option 3</p>
+              </li>
+
+              <li
+                class="mobile-filter__item"
+              >
+                <input type="checkbox" name="filter" id="filter_6" class="mobile-filter__box">
+                <label for="filter_6" class="mobile-filter__replace"></label>
+                <p>Option 4</p>
+              </li>
+
+              <li
+                class="mobile-filter__item"
+              >
+                <input type="checkbox" name="filter" id="filter_7" class="mobile-filter__box">
+                <label for="filter_7" class="mobile-filter__replace"></label>
+                <p>Option 5</p>
+              </li>
+
+              <li
+                class="mobile-filter__item"
+              >
+                <input
+                  type="checkbox"
+                  name="filter"
+                  id="filter_8"
+                  class="mobile-filter__box"
+                >
+                <label
+                  for="filter_8"
+                  class="mobile-filter__replace"
+                >
+                </label>
+                <p>Option 6</p>
+              </li>
+              
+            </ul>
+
+          </div>
+
         </section>
 
         <div class="vacancies__long-line"></div>
@@ -297,7 +417,6 @@
             </p>
           </div>
 
-          <div class="vacancies__red-line"></div>
         </section>
 
         <section class="vacancies__contact contact">
@@ -314,6 +433,9 @@
           </div>
 
         </section>
+
+        <div class="vacancies__red-line"></div>
+
       </section>
 
       <section class="main__wiew-all">
@@ -334,6 +456,7 @@
               id="userName"
               class="e-form__input"
               placeholder="Add your Name here"
+              required
             >
 
             <p class="e-form__text">E-Mail Address*</p>
@@ -343,6 +466,7 @@
               id="userMail"
               class="e-form__input"
               placeholder="john.doe@internet.com"
+              required
             >
 
             <div class="e-form__end">
@@ -351,7 +475,11 @@
                 <img src="./images/body/main/e-form/upload.svg" alt="upload">
                 <p>Upload summary</p>
               </label>
-              <button class="e-form__button">Send</button>
+
+              <div class="e-form__button-wrapper">
+                <button class="e-form__button-item">Send</button>
+                <div class="e-form__button-shadow"></div>
+              </div>
             </div>
           </form>
 
@@ -395,6 +523,20 @@
 
     <footer class="footer">
       <div class="footer__content">
+        <section class="footer__mobile-links mobile-links">
+          <a href="" class="mobile-links__item mobile-links__img">
+            <img src="./images/general/logo/img-1.svg" alt="main page">
+          </a>
+
+          <a href="" class="mobile-links__item mobile-links__text">
+            Our work
+          </a>
+
+          <a href="" class="mobile-links__item mobile-links__text mobile-links__text_active">
+            Fridge
+          </a>
+        </section>
+
         <section class="footer__links links">
           <a href="" class="links__item">Our work</a>
           <a href="" class="links__item">About us</a>

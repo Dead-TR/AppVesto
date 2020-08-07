@@ -1,5 +1,6 @@
 @import "./links/links";
 @import "./total/total";
+@import "./mobile-links/mobile-links";
 
 .footer {
   width: 100%;
@@ -24,4 +25,26 @@
 
 }
 
+@media only screen and (max-width: 685px) {
+  .footer {
 
+    &__content {
+      padding: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .footer {
+
+    &__content {
+      // justify-content: center;
+      flex-direction: column;
+
+    }
+
+    &__total {
+      align-self: center;
+    }
+  }
+}

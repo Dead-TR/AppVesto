@@ -1,0 +1,47 @@
+.mobile-links {
+  width: 100%;
+  margin-bottom: 40px;
+
+  & :last-child {
+    margin-right: 0;
+
+    &::after {
+      content: "";
+    }
+  }
+
+  &__item {
+    margin-right: 25px;
+    position: relative;
+
+    &::after {
+      content: ">";
+      @include fonts-style ("Roboto", normal, 12px, normal, 14px, white);
+      position: absolute;
+      right: -15px;
+      bottom: 2px;
+    }
+  }
+
+  &__img {
+
+    & img {
+      height: 14px;
+      width: auto;
+    }
+  }
+
+  &__text {
+    @include fonts-style ("Roboto", normal, 12px, normal, 14px, white);
+
+    &_active {
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .mobile-links {
+    display: none;
+  }
+}

@@ -2,6 +2,7 @@
 @import "./skill-level/skill-level";
 @import "./description/description";
 @import "./contact/contact";
+@import "./mobile-filter/mobile-filter";
 
 .vacancies {
   padding: 0 80px;
@@ -15,6 +16,7 @@
   &__choice {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
 
   &__dropdown {
@@ -42,9 +44,35 @@
     height: 2px;
     background: linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
     border-radius: 10px;
+    bottom: 0;
+    left: 0;
   }
 
   &__contact {
+
+  }
+
+  &__mobile-filter {
+    
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .vacancies {
+    padding: 0 40px;
+
+    &__title {
+      @include fonts-style ("Bunken Tech Sans Pro", 600, 28px, normal, 36px, black);
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .vacancies {
+
+    &__red-line {
+      bottom: -20px;
+    }
 
   }
 }

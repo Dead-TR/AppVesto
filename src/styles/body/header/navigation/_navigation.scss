@@ -22,3 +22,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 1130px) {
+  .navigation {
+    &__list {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .navigation {
+  }
+}
