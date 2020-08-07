@@ -12,7 +12,6 @@ $mainLetterColor: #121212;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.2);
   }
 
-
   &__title {
     @include fonts-style ("Roboto", normal, 18px, normal, 21px, $mainLetterColor);
   }
@@ -44,16 +43,8 @@ $mainLetterColor: #121212;
     }
   }
 
-  &__content {
-
-  }
-
   &__content-title {
     @include fonts-style ("Roboto", normal, 18px, normal, 130%, $mainLetterColor);
-  }
-
-  &__content-list {
-
   }
 
   &__content-item {

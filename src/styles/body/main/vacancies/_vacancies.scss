@@ -19,18 +19,6 @@
     position: relative;
   }
 
-  &__dropdown {
-
-  }
-
-  &__skill-level {
-
-  }
-
-  &__description {
-
-  }
-
   &__long-line {
     position: absolute;
     left: -100%;
@@ -46,14 +34,6 @@
     border-radius: 10px;
     bottom: 0;
     left: 0;
-  }
-
-  &__contact {
-
-  }
-
-  &__mobile-filter {
-    
   }
 }
 
@@ -73,6 +53,5 @@
     &__red-line {
       bottom: -20px;
     }
-
   }
 }

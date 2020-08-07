@@ -7,10 +7,6 @@
     text-transform: uppercase;
   }
 
-  &__item {
-
-  }
-
   &__text {
     @include fonts-style ("Lato", normal, 12px, normal, 21px, #A4A4AE);
   }
@@ -105,6 +101,5 @@
     &__button {
       margin-top: 30px;
     }
-
   }
 }

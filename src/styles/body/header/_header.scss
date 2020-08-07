@@ -16,29 +16,20 @@
     justify-content: space-between;
   }
 
-  &__logo {
-
-  }
-
-  &__navigation {
-
-  }
-
-  &__lang {
-    
-  } 
-
+  &__mobile-logo,
+  &__button-side-menu,
   &__mobile-content {
     display: none;
   }
 
   &__button-side-menu {
-    display: none;
     position: absolute;
     top: 15px;
     left: 20px;
     height: 15px;
     width: 25px;
+    
+    cursor: pointer;
     flex-direction: column;
     justify-content: space-around;
     transition: transform 1s;
@@ -60,8 +51,6 @@
   }
 
   &__mobile-logo {
-    display: none;
-
     align-items: flex-end;
     justify-content: center;
 
@@ -76,15 +65,9 @@
   .header {
     padding: 15px;
 
+    &__mobile-content,
+    &__button-side-menu,
     &__mobile-logo {
-      display: flex;
-    }
-
-    &__button-side-menu {
-      display: flex;
-    }
-
-    &__mobile-content {
       display: flex;
     }
 

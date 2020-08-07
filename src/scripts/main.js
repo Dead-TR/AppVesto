@@ -9,7 +9,7 @@ skillCheckers.addEventListener('click', (event) => {
 
     activeLabel.classList.remove('skill-level_unchecked');
     activeLabel.classList.add('skill-level_checked');
-   
+
     for (const i of [...skillCheckers.children]) {
       if (i !== activeLabel) {
         i.classList.add('skill-level_unchecked');
@@ -56,7 +56,7 @@ const dropdownSelectShow = (value) => { // rerender dropdown-select
 
   for (const dropUnit of dropList) {
     if (dropUnit.dataset.dropdownvalue === value) {
-      dropdownSelectElement.setAttribute('data-dropdownValue', `${value}`)
+      dropdownSelectElement.setAttribute('data-dropdownvalue', `${value}`);
       dropdownSelectElement.innerText = dropUnit.innerText;
     }
   }
@@ -104,8 +104,7 @@ dropListParent.addEventListener('click', (event) => { // make choice listener
 let amountState = 0;
 const filter = document.querySelector('.mobile-filter');
 
-filter.addEventListener('click', (event)=> {
-
+filter.addEventListener('click', (event) => {
   if (event.target.className === 'mobile-filter__img') { // open filter list
     const filterList = document.querySelector('.mobile-filter__list');
 
