@@ -12,6 +12,7 @@
     width: 15px;
     height: 20px;
     z-index: 4;
+    cursor: pointer;
   }
 
   &__amount {
@@ -64,6 +65,7 @@
     display: flex;
     align-items: center;
     padding: 0 15px;
+    cursor: pointer;
 
     & p {
       @include fonts-style ("Lato", normal, 16px, normal, 28px, #1B1B25);
