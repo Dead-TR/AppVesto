@@ -669,7 +669,8 @@ html {
     top: -30px;
     width: 15px;
     height: 20px;
-    z-index: 4; }
+    z-index: 4;
+    cursor: pointer; }
   .mobile-filter__amount {
     position: absolute;
     top: -33px;
@@ -725,7 +726,8 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 15px; }
+    padding: 0 15px;
+    cursor: pointer; }
     .mobile-filter__item p {
       font-family: "Lato", "Roboto", Arial, sans-serif;
       font-weight: normal;
