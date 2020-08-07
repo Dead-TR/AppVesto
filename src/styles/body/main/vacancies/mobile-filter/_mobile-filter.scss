@@ -19,14 +19,16 @@
     position: absolute;
     top: -33px;
     right: 45px;
-
     height: 25px;
     width: 40px;
+  
     background: linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
     border-radius: 100px;
+    @include fonts-style ("Lato", 900, 12px, normal, 15px, white);
+    cursor: pointer;
+  
     display: flex;
     align-items: center;
-    @include fonts-style ("Lato", 900, 12px, normal, 15px, white);
     max-width: 0;
     padding-left: 0;
     transition: max-width 1s, padding 1s;
