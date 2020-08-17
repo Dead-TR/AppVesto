@@ -15,15 +15,16 @@
 
   &__element {
     @include fonts-style ("Signika", normal, 18px, normal, 135%, white);
-    transition: color 1s;
+    opacity: 0.6;
+    transition: opacity 1s;
 
     &:hover {
-      color: #b3b3b3;
+      opacity: 1;
     }
   }
 }
 
-@media only screen and (max-width: 1130px) {
+@media only screen and (max-width: 1300px) {
   .navigation {
     &__list {
       margin: 0;

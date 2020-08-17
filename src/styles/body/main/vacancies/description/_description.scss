@@ -19,7 +19,7 @@
     border-left: none;
     border-right: none;
     position: relative;
-    overflow-y: hidden;
+    overflow: hidden;
     cursor: pointer;
     max-height: 60px;
     transition: max-height 1s;
@@ -41,12 +41,17 @@
 
   &__title {
     @include fonts-style ("Roboto", normal, 22px, normal, 31px, #1B1B25);
+    transition: font-weight 1s;
 
     &_highlight {
       @include fonts-style ("Roboto", 500, 22px, normal, 26px, transparent);
       background: -webkit-linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    &_active {
+      font-weight: bold;
     }
   }
 
@@ -58,6 +63,15 @@
   &__text {
     max-width: 690px;
     @include fonts-style ("Lato", normal, 16px, normal, 28px, #1B1B25);
+  }
+
+  &__vacancy {
+    cursor: default;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
@@ -71,6 +85,21 @@
     &__info,
     &__text {
       margin: 15px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .description {
+    &__title {
+      @include fonts-style ("Roboto", normal, 19px, normal, 31px, #1B1B25);
+  
+      &_highlight {
+        @include fonts-style ("Roboto", 500, 19px, normal, 26px, transparent);
+        background: -webkit-linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 }

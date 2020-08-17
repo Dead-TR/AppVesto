@@ -55,3 +55,13 @@ $mainLetterColor: #121212;
     }
   }
 }
+
+@media only screen and (max-width: 355px) {
+  .communication {
+    padding: 20px;
+
+    &__name {
+      font-size: 22px;
+    }
+  }
+}

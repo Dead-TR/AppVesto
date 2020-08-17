@@ -44,11 +44,60 @@ dropListParent.addEventListener('click', (event) => { // make choice listener
   const dropIco = document.querySelector('.dropdown__arrow');
 
   if (event.target.className === 'dropdown__item') {
+    const dropItem = event.target;
+    const dropDescription = document.querySelector('.description');
+
+    // dropListParent - перебираю нащадків, у пошуках актуального, й вішаю йому сірий клас
+
     dropdownSelectElement.setAttribute('data-open', 'false');
     dropIco.style = 'transform: rotate(0deg);';
     dropListParent.className = dropLouver(dropdownSelectElement.dataset.open);
     dropdownSelectShow(event.target.dataset.dropdownvalue);
+
+    for (const i of [...dropListParent.children]) { // find active element
+      if (i === dropItem) {
+        i.classList.add('dropdown__item_active');
+      }
+
+      if (
+        i !== dropItem && i.classList.contains('dropdown__item_active')
+      ) {
+        i.classList.remove('dropdown__item_active');
+      }
+    }
+
+    // open select drop-menu
+    const dropOpen = (activeDrop, arrow, title, isOpen) => { // add/remove active class
+      if (isOpen) {
+        activeDrop.classList.remove('description__item_closed');
+        activeDrop.classList.add('description__item_open');
+        arrow.style = 'transform: rotate(180deg);';
+        title.classList.add('description__title_active');
+      } else {
+        activeDrop.classList.remove('description__item_open');
+        activeDrop.classList.add('description__item_closed');
+        arrow.style = 'transform: rotate(0deg);';
+        title.classList.remove('description__title_active');
+      }
+    };
+
+    for (const element of [...dropDescription.children]) {
+      const arrow = element.firstElementChild;
+      const title = element.children[1];
+
+      if (
+        element.children[1].innerText === dropItem.dataset.dropdownvalue // find select drop-element
+      ) {
+        dropOpen(element, arrow, title, true);
+      } else {
+        dropOpen(element, arrow, title, false);
+      };
+
+      if (dropItem.dataset.dropdownvalue === 'All vacancies') {
+        dropOpen(element, arrow, title, true);
+      }
+    }
   }
 });
 
-dropdownSelectShow('1');
+dropdownSelectShow('All vacancies');

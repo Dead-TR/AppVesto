@@ -42,7 +42,7 @@
     }
 
     &_open {
-      max-height: 1000px;
+      max-height: 700px;
     }
   }
 
@@ -58,6 +58,27 @@
       background: -webkit-linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    &_active {
+      color: #bdbdbd;
+      cursor: default;
+
+      &:hover {
+        @include fonts-style ("Lato", normal, 16px, normal, 28px, #bdbdbd);
+        background: transparent;
+        -webkit-text-fill-color: #bdbdbd;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .dropdown {
+    width: 200px;
+
+    &__list {
+      width: 200px;
     }
   }
 }

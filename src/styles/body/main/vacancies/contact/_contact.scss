@@ -1,7 +1,7 @@
 .contact {
   position: absolute;
-  bottom: 60px;
-  left: 900px;
+  top: 100px;
+  left: 800px;
 
   &__call {
     display: flex;
@@ -19,6 +19,8 @@
   }
 
   &__button-item {
+    position: relative;
+    z-index: 5;
     @include fonts-style ("Signika", bold, 14px, normal, 130%, white);
     width: 100%;
     padding: 15px 45px;
@@ -44,7 +46,7 @@
     border-radius: 100px;
     top: 20px;
     left: 10px;
-    z-index: -1;
+    z-index: 0;
   }
 }
 

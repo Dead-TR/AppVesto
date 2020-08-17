@@ -42,7 +42,8 @@
     padding: 0 40px;
 
     &__title {
-      @include fonts-style ("Bunken Tech Sans Pro", 600, 28px, normal, 36px, black);
+      @include fonts-style ("Bunken Tech Sans Pro", 600, 25px, normal, 36px, black);
+      text-align: center;
     }
   }
 }
@@ -53,5 +54,11 @@
     &__red-line {
       bottom: -20px;
     }
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .vacancies {
+    padding: 30px;
   }
 }
