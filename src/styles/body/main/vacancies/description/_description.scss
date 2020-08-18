@@ -25,7 +25,7 @@
     transition: max-height 1s;
 
     &_open {
-      max-height: 500px;
+      max-height: 1500px;
     }
     
     &_closed {
@@ -41,17 +41,14 @@
 
   &__title {
     @include fonts-style ("Roboto", normal, 22px, normal, 31px, #1B1B25);
-    transition: font-weight 1s;
+    transition: font-weight 1s, color 1s;
 
-    &_highlight {
-      @include fonts-style ("Roboto", 500, 22px, normal, 26px, transparent);
+    &_active {
+      // font-weight: bold;
+      @include fonts-style ("Roboto", 500, 22px, normal, 26px, #FF1500);
       background: -webkit-linear-gradient(90deg, #FF1500 0%, #FE7000 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-    }
-
-    &_active {
-      font-weight: bold;
     }
   }
 
@@ -85,6 +82,10 @@
     &__info,
     &__text {
       margin: 15px 0;
+    }
+
+    &__vacancy {
+      padding: 20px;
     }
   }
 }

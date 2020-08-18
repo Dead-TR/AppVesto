@@ -54,6 +54,8 @@ dropListParent.addEventListener('click', (event) => { // make choice listener
     dropListParent.className = dropLouver(dropdownSelectElement.dataset.open);
     dropdownSelectShow(event.target.dataset.dropdownvalue);
 
+    // block active select:
+    /*
     for (const i of [...dropListParent.children]) { // find active element
       if (i === dropItem) {
         i.classList.add('dropdown__item_active');
@@ -65,6 +67,7 @@ dropListParent.addEventListener('click', (event) => { // make choice listener
         i.classList.remove('dropdown__item_active');
       }
     }
+    */
 
     // open select drop-menu
     const dropOpen = (activeDrop, arrow, title, isOpen) => { // add/remove active class

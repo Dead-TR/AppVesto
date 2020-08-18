@@ -1,7 +1,6 @@
 'use strict';
 
 const dropDescription = document.querySelector('.description');
-// const contactBtn = document.querySelector('.contact__button-item');
 
 const dropOpen = (activeDrop, arrow, title, isOpen) => {
   if (isOpen) {
@@ -33,6 +32,8 @@ const scrolls = (activeDrop, arrow, title) => {
   if (activeDrop) {
     if (activeDrop.classList.contains('description__item_closed')) {
       dropOpen(activeDrop, arrow, title, true);
+      console.log("scrolls -> title", title)
+      
     } else {
       dropOpen(activeDrop, arrow, title, false);
     }

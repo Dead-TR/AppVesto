@@ -68,6 +68,10 @@
       width: auto;
       height: 15px;
     }
+
+    & :first-child {
+      margin-right: 10px;
+    }
   }
 }
 

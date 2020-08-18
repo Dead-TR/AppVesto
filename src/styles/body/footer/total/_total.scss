@@ -24,3 +24,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 685px) {
+  .total {
+    &__policy {
+      display: none;
+    }
+
+    &__logo {
+      margin: 0 auto 25px;
+    }
+  }
+}

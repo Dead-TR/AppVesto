@@ -12,7 +12,7 @@
     >
     <script type="text/javascript" src="scripts/slide-btn.js" defer></script>
     <script type="text/javascript" src="scripts/dropdown.js" defer></script>
-    <script type="text/javascript" src="scripts/about-drop.js" defer></script>
+    <script type="text/javascript" src="scripts/vacancy-drop.js" defer></script>
     <script type="text/javascript" src="scripts/radio.js" defer></script>
     <script type="text/javascript" src="scripts/filter.js" defer></script>
     <script type="text/javascript" src="scripts/file-input.js" defer></script>
@@ -261,27 +261,15 @@
               <li
                 class="mobile-filter__item"
               >
-              <input
-                type="checkbox"
-                name="filter"
-                id="filter_2"
-                class="mobile-filter__box"
-              >
-              <label for="filter_2" class="mobile-filter__replace"></label>
-              <p>Option</p>
-              </li>
-
-              <li
-                class="mobile-filter__item"
-              >
                 <input
                   type="checkbox"
                   name="filter"
                   id="filter_3"
                   class="mobile-filter__box"
+                  value="junior"
                 >
                 <label for="filter_3" class="mobile-filter__replace"></label>
-                <p>Option 1</p>
+                <p>Junior</p>
               </li>
 
               <li
@@ -292,9 +280,10 @@
                   name="filter"
                   id="filter_4"
                   class="mobile-filter__box"
+                  value="middle"
                 >
                 <label for="filter_4" class="mobile-filter__replace"></label>
-                <p>Option 2</p>
+                <p>Middle</p>
               </li>
 
               <li
@@ -305,50 +294,10 @@
                   name="filter"
                   id="filter_5"
                   class="mobile-filter__box"
+                  value="senior"
                 >
                 <label for="filter_5" class="mobile-filter__replace"></label>
-                <p>Option 3</p>
-              </li>
-
-              <li
-                class="mobile-filter__item"
-              >
-                <input
-                  type="checkbox"
-                  name="filter"
-                  id="filter_6"
-                  class="mobile-filter__box"
-                >
-                <label for="filter_6" class="mobile-filter__replace"></label>
-                <p>Option 4</p>
-              </li>
-
-              <li class="mobile-filter__item">
-                <input
-                  type="checkbox"
-                  name="filter"
-                  id="filter_7"
-                  class="mobile-filter__box"
-                >
-                <label for="filter_7" class="mobile-filter__replace"></label>
-                <p>Option 5</p>
-              </li>
-
-              <li
-                class="mobile-filter__item"
-              >
-                <input
-                  type="checkbox"
-                  name="filter"
-                  id="filter_8"
-                  class="mobile-filter__box"
-                >
-                <label
-                  for="filter_8"
-                  class="mobile-filter__replace"
-                >
-                </label>
-                <p>Option 6</p>
+                <p>Senior</p>
               </li>
 
             </ul>
@@ -361,11 +310,14 @@
 
         <section class="vacancies__description description">
 
-          <div class="description__item description__item_closed">
+          <div
+            class="description__item description__item_closed"
+            data-level='junior'
+          >
             <div class="description__arrow"></div>
             <h1 class="description__title">Junior PHP Developer</h1>
             <div class="description__vacancy">
-              <h2 class="description__info">Vacancy name</h2>
+              <h2 class="description__info">Vacancy description</h2>
               <p class="description__text">
                 Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
@@ -390,20 +342,26 @@
     
               <div class="contact__button">
                   <div class="contact__button-shadow"></div>
-                  <button class="contact__button-item">
-                    Send summary
-                  </button>
+                  <form action="#sendSummary" method="GET">
+                    <button class="contact__button-item">
+                      Send summary
+                    </button>
+                  </form>
               </div>
     
             </section>
+            <div class="vacancies__red-line"></div>
 
           </div>
 
-          <div class="description__item description__item_closed">
+          <div
+            class="description__item description__item_closed"
+            data-level='middle'
+          >
             <div class="description__arrow"></div>
-            <h1 class="description__title description__title_highlight">Middle UI/UX Designer</h1>
+            <h1 class="description__title">Middle UI/UX Designer</h1>
             <div class="description__vacancy">
-              <h2 class="description__info">Vacancy name</h2>
+              <h2 class="description__info">Vacancy description</h2>
               <p class="description__text">
                 Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
@@ -428,39 +386,27 @@
     
               <div class="contact__button">
                   <div class="contact__button-shadow"></div>
-                  <button class="contact__button-item">
-                    Send summary
-                  </button>
+                  <form action="#sendSummary" method="GET">
+                    <button class="contact__button-item">
+                      Send summary
+                    </button>
+                  </form>
               </div>
     
             </section>
+            <div class="vacancies__red-line"></div>
 
           </div>
 
-          <div class="description__item description__item_closed">
+          <div
+            class="description__item description__item_closed"
+            data-level='senior'
+          >
             <div class="description__arrow"></div>
             <h1 class="description__title ">Senior PHP Developer</h1>
 
             <div class="description__vacancy">
-              <h2 class="description__info">Vacancy name</h2>
-              <p class="description__text">
-                Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
-              </p>
-            </div>
-
-            <div class="description__vacancy">
-              <h2 class="description__info">Vacancy name</h2>
+              <h2 class="description__info">Vacancy description</h2>
               <p class="description__text">
                 Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
@@ -485,20 +431,26 @@
     
               <div class="contact__button">
                   <div class="contact__button-shadow"></div>
-                  <button class="contact__button-item">
-                    Send summary
-                  </button>
+                  <form action="#sendSummary" method="GET">
+                    <button class="contact__button-item">
+                      Send summary
+                    </button>
+                  </form>
               </div>
     
             </section>
+            <div class="vacancies__red-line"></div>
 
           </div>
 
-          <div class="description__item description__item_closed">
+          <div
+            class="description__item description__item_closed"
+            data-level='middle'
+          >
             <div class="description__arrow"></div>
-            <h1 class="description__title description__title_highlight">React Native Developer</h1>
+            <h1 class="description__title">React Native Developer</h1>
             <div class="description__vacancy">
-              <h2 class="description__info">Vacancy name</h2>
+              <h2 class="description__info">Vacancy description</h2>
               <p class="description__text">
                 Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
@@ -523,19 +475,19 @@
     
               <div class="contact__button">
                   <div class="contact__button-shadow"></div>
-                  <button class="contact__button-item">
-                    Send summary
-                  </button>
+                  <form action="#sendSummary" method="GET">
+                    <button class="contact__button-item">
+                      Send summary
+                    </button>
+                  </form>
               </div>
     
             </section>
+            <div class="vacancies__red-line"></div>
 
           </div>
 
         </section>
-
-        <div class="vacancies__red-line"></div>
-
       </section>
 
       <section class="main__wiew-all">
@@ -545,7 +497,7 @@
       </section>
 
       <section class="main__enter">
-        <section class="main__e-form e-form">
+        <section class="main__e-form e-form" id="sendSummary">
           <h1 class="e-form__title">Welcome App Vesto!</h1>
 
           <form class="e-form__item">
